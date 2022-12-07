@@ -1,0 +1,59 @@
+<html>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous">
+    </script>
+<script>
+    $(()=>{
+        
+      let $edit1 = $('#edit1');
+      let $edit2 = $('#edit2');
+      let $rez = $('#rez');
+      let $knopka = $('#knopka');
+      $knopka.on('click',()=>{
+        let x = parseInt($edit1.val(),10);
+        let y = parseInt($edit2.val(),10);
+        $rez.val(x+y)
+      });
+
+    });
+
+
+
+</script>
+<style>
+    .btn{
+        height:32px;
+        line-height: 32px;
+        text-align: center;
+        min-width: 100px;
+        border-radius:12px;
+        border: 1px solid gray;
+        outline: none;
+    }
+
+    .btn:hover{
+        cursor: pointer;
+        background: aquamarine;
+    }
+    .ed{
+        height: 32px;
+        line-height: 32px;
+        border:2px solid gray;
+        width: 120px;
+        padding-left: 5px;
+    }
+
+</style>
+<body>
+    <input id="edit1" type="edit" value="" class="ed"/>
+    <input id="edit2" type="edit" value="" class="ed"/>
+    <input id="knopka" type="button" value="rez" class="btn"/><br>
+    <input id="rez" type="edit" value="" class="ed"/><br>
+    <textarea>
+    </textarea><br>
+    <input id="int" type="number" min="0" max="100" class='ed'/><br>
+    <input type="checkbox"/>
+
+</body>    
+</html>
