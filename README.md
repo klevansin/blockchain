@@ -1,2 +1,2 @@
 # blockchain
- primer raboti
+ База основанная на технологии blockchain
